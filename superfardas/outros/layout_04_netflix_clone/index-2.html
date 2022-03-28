@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartext" aria-controls="navbartext" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand ml-2 flex-grow-1" href="#">
+                <img src="assets/img/logo.png" alt="Logo Netflix">
+            </a>
+            
+            <div class="collapse navbar-collapse" id="navbartext">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Séries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Documentários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Configurações</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expended="false">
+                            Ajuda
+                        </a>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                            <a href="#" class="dropdown-item text-secondary">Configurações</a>
+                            <a href="#" class="dropdown-item text-secondary">Redes</a>
+                            <a href="#" class="dropdown-item text-secondary">contato</a>
+                        </div>
+                    </li>
+                </ul>
+                <a class="navbar-brand ml-2" href="#">
+                    <img src="assets/img/avatar-netflix.png" alt="Avatar Netflix">
+                    Gustavo Guimarães
+                </a>        
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar.." aria-label="Search">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div id="scrollspy-content" data-spy="scroll" data-target="navbar" data-offset="0">
+        <div class="container-fluid">
+            <div class="row-fluid"><!-- Card de videos -->
+                <div class="card">
+                    <img class="card-img" src="assets/img/full-banner.jpg"  alt="">
+                    <div class="card-img-overlay text-white">
+                        <h5 class="card-title">Os Vingadores</h5>
+                        <small class="text-muted">ano 2019 duração: 189 min</small>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <button type="submit" class="btn btn-danger">Assistir</button>
+                    </div>
+                </div>
+            </div> <!-- row 00 -->
+
+            <div class="row-fluid"><!-- Galeria de videos -->
+                <section>
+                    <h5 class="text-secondary">Populares na Netflix</h5>
+                    <div id="carouselFilmesInternal-1" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="container-fluid">     
+                            
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="assets/img/capitao-america-o-primeiro-vingador.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/guardios-da-galaxia.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/greys-anatomy.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/nosso-planeta.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="assets/img/better-call-saul.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/eu-sou-a-lenda.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/thor-o-mundo-sombrio.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/vingadores-era-de-ultron.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!--container-carousel-->
+
+                            <!-- Controladores do carousel -->
+                            <a class="carousel-control-prev" href="#carouselFilmesInternal-1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Voltar</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselFilmesInternal-1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">seguir</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div><!-- row 01 -->
+            
+            <div class="row-fluid"><!-- Galeria de videos -->
+                <section>
+                    <h5 class="text-secondary">Em alta</h5>
+                    <div id="carouselFilmesInternal-2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="container-fluid">     
+                            
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="assets/img/capitao-america-o-primeiro-vingador.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/guardios-da-galaxia.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/greys-anatomy.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/nosso-planeta.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="assets/img/better-call-saul.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/eu-sou-a-lenda.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/thor-o-mundo-sombrio.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/vingadores-era-de-ultron.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!--container-carousel-->
+
+                            <!-- Controladores do carousel -->
+                            <a class="carousel-control-prev" href="#carouselFilmesInternal-2" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Voltar</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselFilmesInternal-2" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">seguir</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div><!-- row 02 --> 
+
+            <div class="row-fluid"><!-- Galeria de videos -->
+                <section>
+                    <h5 class="text-secondary">Continue assistindo..</h5>
+                    <div id="carouselFilmesInternal-3" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="container-fluid">     
+                            
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="assets/img/capitao-america-o-primeiro-vingador.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/guardios-da-galaxia.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/greys-anatomy.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/nosso-planeta.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="assets/img/better-call-saul.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/eu-sou-a-lenda.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/thor-o-mundo-sombrio.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                        <div class="col-3">
+                                            <img src="assets/img/vingadores-era-de-ultron.jpg" alt="" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!--container-carousel-->
+
+                            <!-- Controladores do carousel -->
+                            <a class="carousel-control-prev" href="#carouselFilmesInternal-3" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Voltar</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselFilmesInternal-3" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">seguir</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div><!-- row 03 --> 
+
+        </div><!-- conteiner-fluid -->  
+    </div> <!-- scrollspy-content -->  
+    <div class="footer">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Termos de uso</a> </li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Declaração de privacidade</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Preferencias de cookes</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary" href="#">Central de ajuda</a></li>
+        </ul>
+    </div>
+    <!-- Chamada de arquivos local -->  
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script>
+        /* Ativando recurso do Jquery do Bootstrap */
+        $(() => {
+
+        });
+    </script>
+</body>
+</html>
